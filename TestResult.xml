@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="1" result="Failed" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="1" engine-version="3.9.0.0" clr-version="4.0.30319.42000" start-time="2019-02-05 19:29:25Z" end-time="2019-02-05 19:29:26Z" duration="0.980148">
+  <command-line><![CDATA[/Users/user/Development/nunitsimpletest/nunit3-console.exe nunitsimpletest.sln --params:run_id=99 --where "class =~ TestClass1 && name == Test1"]]></command-line>
+  <filter>
+    <and>
+      <class re="1">TestClass1</class>
+      <name>Test1</name>
+    </and>
+  </filter>
+  <test-suite type="Assembly" id="1-1002" name="nunitsimpletest.dll" fullname="nunitsimpletest.dll" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-02-05 19:29:25Z" end-time="2019-02-05 19:29:26Z" duration="0.052532" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+    <environment framework-version="3.11.0.0" clr-version="4.0.30319.42000" os-version="MacOSX 18.2.0.0" platform="Unix" cwd="/Users/user/Development/nunitsimpletest" machine-name="MacBook-Pro-User-2" user="user" user-domain="MacBook-Pro-User-2" culture="ru-RU" uiculture="ru-RU" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="/Users/user/Development/nunitsimpletest" />
+      <setting name="TestParametersDictionary" value="[run_id, 99]">
+        <item key="run_id" value="99" />
+      </setting>
+      <setting name="TestParameters" value="run_id=99" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.1" />
+      <setting name="ImageRequiresX86" value="True" />
+      <setting name="RunAsX86" value="True" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="25822" />
+      <property name="_APPDOMAIN" value="domain-64170cca-nunitsimpletest.sln" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1-1003" name="TestClasses" fullname="TestClasses" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-02-05 19:29:25Z" end-time="2019-02-05 19:29:26Z" duration="0.038828" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1-1000" name="TestClass1" fullname="TestClasses.TestClass1" classname="TestClasses.TestClass1" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-02-05 19:29:25Z" end-time="2019-02-05 19:29:26Z" duration="0.036307" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1-1001" name="Test1" fullname="TestClasses.TestClass1.Test1" methodname="Test1" classname="TestClasses.TestClass1" runstate="Runnable" seed="1432444565" result="Failed" start-time="2019-02-05 19:29:25Z" end-time="2019-02-05 19:29:25Z" duration="0.026152" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+            <stack-trace><![CDATA[  at TestClasses.TestClass1.Test1 () [0x00001] in <6c4480c791a2413cade170aa24edaefe>:0 
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+              <stack-trace><![CDATA[  at TestClasses.TestClass1.Test1 () [0x00000] in <6c4480c791a2413cade170aa24edaefe>:0 
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
